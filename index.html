@@ -1,16 +1,80 @@
-<html>
+</html>l
+
 <head>
-<title>TabIndex Example</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabindex Example</title>
+
+
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            padding: 20px;
+
+        }
+
+
+
+        button, div, a {
+
+            display: block;
+
+            margin: 10px 0;
+
+            padding: 10px;
+
+        }
+
+
+
+        div {
+
+            background-color: #f0f0f0;
+
+        }
+
+    </style>
+
 </head>
+
 <body>
 
-<input type="text" tabindex="1" placeholder="First field">
-<input type="text" tabindex="2" placeholder="Second field">
-<button tabindex="3">Submit</button>
+
+
+    <h1>Tabindex Demo</h1>
+
+
+
+    <button>Button 1 (default)</button>
+
+
+
+    <button tabindex="3">Button 2 (tabindex 3)</button>
+
+    <button tabindex="1">Button 3 (tabindex 1)</button>
+
+    <button tabindex="2">Button 4 (tabindex 2)</button>
+
+
+
+    <div tabindex="0">Focusable Div (tabindex 0)</div>
+
+
+
+ 
+
+    <a href="#" tabindex="-1">Link (tabindex -1, not reachable by Tab)</a>
+
+
 
 </body>
+
 </html>
-
-
-
 
