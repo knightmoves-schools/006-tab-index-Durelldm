@@ -1,4 +1,4 @@
-<html lang="en"
+<html lang="en">
 
 <head>
 
@@ -22,97 +22,75 @@
 
         }
 
-        input, select, textarea, button {
+        label {
 
             display: block;
 
-            margin-bottom: 10px;
+            margin-top: 10px;
+
+        }
+
+        input, button {
+
+            width: 100%;
 
             padding: 8px;
 
-            width: 100%;
+            margin-top: 5px;
 
         }
 
     </style>
 
-    <title>Tabindex Example</title>
 </head>
 
 <body>
-    
 
 
 
-<h2>Registration Form (Custom Tab Order)</h2>
+    <h2>Registration Form (Tabindex Example)</h2>
 
 
 
-<form>
+    <form>
 
+        <label for="name">Full Name</label>
 
-    <button tabindex="1">First Focused Button</button>
-
-    <label for="name">Full Name:</label>
-
-    <input type="text" id="name" tabindex="1" placeholder="Enter your name">
+        <input type="text" id="name" tabindex="1">
 
 
 
-    <label for="email">Email:</label>
+        <label for="email">Email</label>
 
-    <input type="email" id="email" tabindex="2" placeholder="Enter your email">
-
-
-
-    <label for="phone">Phone:</label>
-
-    <input type="tel" id="phone" tabindex="3" placeholder="Enter your phone number">
+        <input type="email" id="email" tabindex="2">
 
 
 
-    <label for="country">Country:</label>
+        <label for="phone">Phone</label>
 
-    <select id="country" tabindex="4">
-
-        <option value="">Select Country</option>
-
-        <option>USA</option>
-
-        <option>Canada</option>
-
-        <option>UK</option>
-
-    </select>
+        <input type="tel" id="phone" tabindex="3">
 
 
 
-    <label for="message">Message:</label>
+        <label for="password">Password</label>
 
-    <textarea id="message" tabindex="5" placeholder="Write something..."></textarea>
-
-
-
-    <input type="text" value="Skipped Field" tabindex="-1">
+        <input type="password" id="password" tabindex="4">
 
 
 
-    <button type="submit" tabindex="6">Submit</button>
-   
-    <a href="https://example.com">Standard Link (Natural Order)</a>
+        <label for="confirm">Confirm Password</label>
 
-</form>
-   
-    <div tabindex="0" style="border: 1px solid black; padding: 10px; cursor: pointer;">
-        Custom Focusable Div
-    </div>
+        <input type="password" id="confirm" tabindex="5">
 
-   
-    <input type="text" id="hiddenInput" tabindex="-1" placeholder="I am skipped by Tab">
 
-    <script>
-        
-    </script>
+
+        <button type="submit" tabindex="6">Submit</button>
+
+        <button type="reset" tabindex="7">Reset</button>
+
+    </form>
+
+
 
 </body>
 
