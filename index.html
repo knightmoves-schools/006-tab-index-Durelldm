@@ -1,6 +1,67 @@
+ <html lang="en"
+ lang="en">
+<html lang="en">
+
+<head>
+         <metacharset="UTF-8">
+
 <html>
     <meta charset="UTF-8">
 
+    <title>Tabindex Form Example</title>
+
+       <style></style>
+        
+       </body>
+
+@@ -12,132 +12,106 @@
+
+            font-family: Arial, sans-serif;
+
+            padding: 20px;
+            margin: 40px;
+
+        }
+
+        form {
+
+            max-width: 400px;
+
+@ -22,97 +22,75 @@
+            width: 300px;
+
+        }
+
+        input, select, textarea, button {
+        label {
+
+            display: block;
+            width: 100%;
+
+            margin-bottom: 10px;
+            margin-top: 10px;
+
+            padding: 8px;
+
+        }
+
+        input, button {
+    </style>
+
+            width: 100%;
+</head>
+
+            padding: 8px;
+<body>
+
+            margin-top: 5px;
+
+        }
+
+    </style>
+    <h2>Registration Form (Tabindex Example)</h2>
+
+    <title>Tabindex Example</title>
 <head>
     <title>tab index</title>
 </head>
@@ -8,11 +69,95 @@
 <body>
     <form action="https://www.knightmoves.org">
 
+    <form>
+
+
+
+<h2>Registration Form (Custom Tab Order)</h2>
+        <label for="fname">First Name:</label>
+
+        <input type="text" id="fname" name="fname" tabindex="1">
+
+
+<form>
         <h1>student intro</h1>
 
+        <label for="lname">Last Name:</label>
         <input type="text" placeholder="first name" tab index="2">
         <br/><br/>
 
+    <button tabindex="1">First Focused Button</button>
+        <input type="text" id="lname" name="lname" tabindex="2">
+
+    <label for="name">Full Name:</label>
+
+    <input type="text" id="name" tabindex="1" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+
+    <h2>Registration Form (Tabindex Example)</h2>
+        <input type="email" id="email" name="email" tabindex="3">
+
+    <label for="email">Email:</label>
+
+    <input type="email" id="email" tabindex="2" placeholder="Enter your email">
+
+    <form>
+ 
+
+        <label for="name">Full Name</label>
+        <label for="phone">Phone:</label>
+
+    <label for="phone">Phone:</label>
+        <input type="text" id="name" tabindex="1">
+        <input type="tel" id="phone" name="phone" tabindex="4">
+
+    <input type="tel" id="phone" tabindex="3" placeholder="Enter your phone number">
+
+
+        <label for="email">Email</label>
+        <label for="gender">Gender:</label>
+
+    <label for="country">Country:</label>
+        <input type="email" id="email" tabindex="2">
+        <select id="gender" name="gender" tabindex="5">
+
+    <select id="country" tabindex="4">
+            <option value="">Select</option>
+
+        <option value="">Select Country</option>
+            <option value="male">Male</option>
+
+        <option>USA</option>
+        <label for="phone">Phone</label>
+            <option value="female">Female</option>
+
+        <option>Canada</option>
+        <input type="tel" id="phone" tabindex="3">
+        </select>
+
+        <option>UK</option>
+
+    </select>
+
+        <label for="password">Password</label>
+        <label for="message">Message:</label>
+
+        <input type="password" id="password" tabindex="4">
+        <textarea id="message" name="message" rows="4" tabindex="6"></textarea>
+
+    <label for="message">Message:</label>
+
+    <textarea id="message" tabindex="5" placeholder="Write something..."></textarea>
+
+        <label for="confirm">Confirm Password</label>
+        <label>
+
+        <input type="password" id="confirm" tabindex="5">
+            <input type="checkbox" name="subscribe" tabindex="7"> Subscribe to newsletter
+
+    <input type="text" value="Skipped Field" tabindex="-1">
+        </label>
         <strong>favorite ice cream flavor</strong>
         <br/>
 
@@ -31,11 +176,33 @@
 
         <button type="submit" tabindex="6">Submit</button>
 
+    <button type="submit" tabindex="6">Submit</button>
+        <button type="submit" tabindex="8">Submit</button>
+
+    <a href="https://example.com">Standard Link (Natural Order)</a>
+        <button type="reset" tabindex="7">Reset</button>
+
+</form>
+
+    <div tabindex="0" style="border: 1px solid black; padding: 10px; cursor: pointer;">
+        Custom Focusable Div
+    </div>
+    </form>
+        <button type="reset" tabindex="9">Reset</button>
         form>
          
 
+    </form>
+
+    <input type="text" id="hiddenInput" tabindex="-1" placeholder="I am skipped by Tab">
 </body>
 
+    <script>
 
+    </script>
+</body>
+</html>
+
+</body>
 </html>
 
